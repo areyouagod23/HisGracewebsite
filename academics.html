@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Academics</title>
+  <link rel="stylesheet" type="text/css" href="academics.css">
+</head>
+<body>
+
+  
+  <div id="courses">
+    <h2>Courses</h2>
+    <ul id="course-list">
+      <li>Mathematics</li>
+      <li>Science</li>
+      <li>English</li>
+      <li>Social Studies</li>
+      <!-- Add more courses here -->
+    </ul>
+  </div>
+  
+  <div id="teachers">
+    <h2>Teachers</h2>
+    <ul id="teacher-list">
+      <li>Richard Agyemang</li>
+      <li>Jane Smith</li>
+      <li>Michael Johnson</li>
+      <li>Sarah Wilson</li>
+      <!-- Add more teachers here -->
+    </ul>
+  </div>
+  
+  <script >
+    window.onload = function() {
+  var courseList = document.getElementById('course-list');
+  var teacherList = document.getElementById('teacher-list');
+  
+  // Add a new course
+  var newCourse = document.createElement('li');
+  newCourse.textContent = 'Physics';
+  courseList.appendChild(newCourse);
+  
+  // Add a new teacher
+  var newTeacher = document.createElement('li');
+  newTeacher.textContent = 'Emily Davis';
+  teacherList.appendChild(newTeacher);
+};
+
+  </script>
+   
+   
+</body>
+<footer>
+    <p>&copy; 2023 His Grace Preparatory School. All rights reserved.</p>
+  </footer>
+</html>
